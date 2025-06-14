@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ashik Biju">
+    <meta name="description"
+        content="Discover the best fine dining restaurant in Kochi. Vintique offers gourmet dishes, handcrafted desserts, and a luxurious atmosphere for unforgettable evenings.">
+    <title>Vintique &hyphen; Elegant Fine Dining in Kochi</title>
+    <!-- linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- linking font awesome -->
+    <script src="https://kit.fontawesome.com/47b5fa122b.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- linking bootstrap -->
+    <link href="./css/main.min.css" rel="stylesheet">
+    <!-- linking css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-blackish">
+    <!-- header -->
+    <header class="header min-vh-100 position-relative px-0" id="home">
+        <!-- navbar with offcanvas expand -->
+        <nav class="navbar bg-gunmetal navbar-expand-md fixed-top" aria-label="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="Bootstrap" width="200" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars text-primary"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-dark me-md-3" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom border-primary border-1 px-2">
+                        <h2 class="offcanva text-primary" id="offcanvasNavbarLabel">
+                            Vintique
+                        </h2>
+                        <button type="button" class="btn text-primary ms-auto" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body me-md-0 mx-auto">
+                        <ul class="navbar-nav d-flex gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary text-center" aria-current="page"
+                                    href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary text-center" aria-current="page"
+                                    href="#aboutus">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary text-center" aria-current="page"
+                                    href="#ourmenu">Our Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary text-center" aria-current="page"
+                                    href="#contactus">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-snow mx-auto" aria-current="page" href="#reserve">Find A Table</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- brand name used for animation -->
+        <div class="header__name position-absolute top-50 text-light d-flex justify-content-center z-1">
+            <div class="header__name-first position-absolute">
+                <h1 class="display-1 d-inline-block name-l1">V</h1>
+            </div>
+            <div class="header__name-rest position-absolute end-0">
+                <h1 class="display-1 d-inline-block name-l2">I</h1>
+                <h1 class="display-1 d-inline-block name-l3">N</h1>
+                <h1 class="display-1 d-inline-block name-l4">T</h1>
+                <h1 class="display-1 d-inline-block name-l5">I</h1>
+                <h1 class="display-1 d-inline-block name-l6">Q</h1>
+                <h1 class="display-1 d-inline-block name-l7">U</h1>
+                <h1 class="display-1 d-inline-block name-l8">E</h1>
+            </div>
+            <!-- brandname container with maintaining standin -->
+            <div class="name__standin">
+                <h1 class="display-1 opacity-0">VQINTIQUE</h1>
+            </div>
+        </div>
+        <!-- first page -->
+        <div class="row g-0 position-relative header__hero my-2">
+            <!-- automated carousel -->
+            <div id="carouselExampleAutoplaying" class="carousel slide col-sm-6" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/cus1.jpg" class="d-block w-100 carousel__img object-fit-cover"
+                            alt="Dish One">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/cus2.jpg" class="d-block w-100 carousel__img object-fit-cover"
+                            alt="Dish two">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/cus3.jpg"
+                            class="d-block w-100 carousel__img carousel__img-last object-fit-cover" alt="Dish three">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- content in first page -->
+            <section
+                class="col-sm-6 header__content position-absolute d-flex flex-column justify-content-center px-1 text-center">
+                <!-- Created by Ashik Biju | Restaurant Webpage | 2025 -->
+                <h2 class="display-2 text-primary mt-6">The Art of Dining</h2>
+                <div class="mt-xl-8 mt-sm-6 mb-1 mt-7">
+                    <p class="lead text-primary px-xxl-5">
+                        Experience exquisite flavors, elegant ambiance, and impeccable
+                        service at our fine dining restaurant &hyphen; where every meal is
+                        a celebration.
+                    </p>
+                    <div class="col-6 mx-auto mb-4 mt-3">
+                        <a href="#reserve" class="btn btn-snow btn-lg">Find a Table</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <!-- about section -->
+        <div class="background-one w-100 position-relative about container-fluid main-section p-2" id="aboutus">
+            <div class="row gy-2">
+                <section
+                    class="about__goal rounded-4 text-primary col-sm-10 col-md-6 mx-sm-auto mx-md-0 ms-md-2 mt-md-3 p-2">
+                    <h2 class="display-5 text-center">Our Goals and History</h2>
+                    <p class="text-justify">
+                        Vintique was born from a passion for reviving the timeless charm
+                        of classic dining while embracing modern culinary innovation. Our
+                        goal is to create an unforgettable fine dining experience where
+                        every dish reflects artistry, every detail exudes elegance, and
+                        every guest feels truly valued. Rooted in tradition and elevated
+                        by contemporary flavors, Vintique is where heritage meets
+                        sophistication on every plate.
+                    </p>
+                </section>
+                <div
+                    class="card col-6 col-sm-4 col-md-3 col-xl-2 me-sm-7 me-md-0 mt-md-4 offset-2 offset-sm-3 offset-md-2 me-5">
+                    <img src="./images/chef/chef1.jpg" class="card-img-top about__goal object-fit-cover"
+                        style="height: 250px" alt="chef-one">
+                    <div class="card-body p-1 text-center">
+                        <h5 class="card-title">John Samuel</h5>
+                        <p class="card-text">Chef</p>
+                    </div>
+                </div>
+                <div class="card col-6 col-sm-4 col-md-3 col-xl-2 offset-sm-1 offset-md-2 offset-lg-3">
+                    <img src="./images/chef/chef2.jpg" class="card-img-top object-fit-cover" style="height: 250px"
+                        alt="chef-two">
+                    <div class="card-body p-1 text-center">
+                        <h5 class="card-title">Paul Marks</h5>
+                        <p class="card-text">Chef</p>
+                    </div>
+                </div>
+            </div>
+            <section
+                class="about__hours p-sm-2 position-absolute rounded-4 text-primary m-sm-5 m-md-6 bottom-0 end-0 m-1 p-1">
+                <h2 class="display-6">We&apos;re Open</h2>
+                <p class="">Mon &hyphen; Fri: 9am &hyphen; 11pm</p>
+                <p class="">Sat &hyphen; Sun: 10am &hyphen; 9pm</p>
+            </section>
+        </div>
+        <!-- menu section with accordion all closed by default -->
+        <div class="text-primary main-section text-center" id="ourmenu">
+            <p class="lead pb-3 pt-4">We bring you</p>
+            <hr class="border-primary mb-0 opacity-100">
+            <div class="accordion accordion-flush pb-0" id="accordionFlushExample">
+                <div class="accordion-item bg-blackish position-relative pt-2">
+                    <h2 class="menu__hover">
+                        <button
+                            class="accordion-button collapsed bg-blackish text-primary d-inline-block w-100 fs-1 text-center"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            MENU
+                        </button>
+                    </h2>
+                    <img src="images/menu/dish1.jpg" alt="Dish one"
+                        class="menu__imga menu__img position-absolute object-fit-cover">
+                    <img src="images/menu/dish2.jpg" alt="Dish two"
+                        class="menu__imgb menu__img position-absolute object-fit-cover">
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body text-primary row w-100 text-start">
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Appetizers</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Seared Scallops</strong><br>
+                                            <em>Cauliflower purée, crisp pancetta</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;850</div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Wild Mushroom Tartlet</strong><br>
+                                            <em>Butter pastry, truffle oil drizzle</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;720</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Main Course</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Herb&hyphen;Crusted Lamb Rack</strong><br>
+                                            <em>Rosemary jus, pomme purée</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;1,950</div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Pan&hyphen;Seared Sea Bass</strong><br>
+                                            <em>Saffron risotto, grilled asparagus</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;1,750</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Desserts</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Chocolate Fondant</strong><br>
+                                            <em>Molten center, vanilla bean ice cream</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;680</div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Lemon Panna Cotta</strong><br>
+                                            <em>Berry compote, mint garnish</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;620</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-blackish position-relative pt-2">
+                    <h2 class="menu__hover">
+                        <button
+                            class="accordion-button collapsed bg-blackish text-primary d-inline-block w-100 fs-1 text-center"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                            COCKTAILS
+                        </button>
+                    </h2>
+                    <img src="images/menu/drink1.jpg" alt="Drink one"
+                        class="menu__imgc menu__img position-absolute object-fit-cover">
+                    <img src="images/menu/drink2.jpg" alt="Drink two"
+                        class="menu__imgd menu__img position-absolute object-fit-cover">
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body text-primary row w-100 text-start">
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Classics with a Twist</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Velvet Old Fashioned</strong><br>
+                                            <em>Aged bourbon, smoked orange bitters, brown sugar
+                                                cube</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;780</div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Midnight Negroni</strong><br>
+                                            <em>Dry gin, coffee-infused Campari, vermouth</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;820</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Refreshing & Light</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Citrus Bloom</strong><br>
+                                            <em>Vodka, elderflower liqueur, grapefruit juice,
+                                                lime</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;740</div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Basil Breeze</strong><br>
+                                            <em>Gin, fresh basil, cucumber, lemon tonic</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;760</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Indulgent & Bold</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Spiced Plum Manhattan</strong><br>
+                                            <em>Rye whiskey, spiced plum syrup, vermouth</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;880</div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Honey Espresso Martini</strong><br>
+                                            <em>Vodka, espresso, burnt honey syrup, coffee
+                                                liqueur</em>
+                                        </div>
+                                        <div class="col-4 text-center">&#8377;890</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-blackish position-relative pt-2">
+                    <h2 class="menu__hover">
+                        <button
+                            class="accordion-button collapsed bg-blackish text-primary d-inline-block w-100 fs-1 text-center"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                            aria-expanded="false" aria-controls="flush-collapseThree">
+                            WINE LIST
+                        </button>
+                    </h2>
+                    <img src="images/menu/wine1.jpg" alt="Wine one"
+                        class="menu__imga menu__img position-absolute object-fit-cover">
+                    <img src="images/menu/wine2.jpg" alt="Wine two"
+                        class="menu__imgb menu__img position-absolute object-fit-cover">
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body text-primary row w-100 text-start">
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Red Wines</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Château Margaux
+                                                &lpar;France&rpar;</strong><br>
+                                            <em>Cabernet Sauvignon, Merlot &hyphen; Deep, velvety
+                                                with notes of dark berries and oak</em>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            &#8377;9,500 &sol; bottle<br>&#8377;1,950 &sol; glass
+                                        </div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Classico Riserva
+                                                &lpar;Italy&rpar;</strong><br>
+                                            <em>Sangiovese &hyphen; Balanced acidity, ripe cherry and
+                                                tobacco undertones</em>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            &#8377;4,200 &sol; bottle<br>&#8377;850 &sol; glass
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">White Wines</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Sauvignon Blanc &lpar;Italy&rpar;</strong><br>
+                                            <em>Crisp, citrus-forward with tropical fruit and mineral
+                                                finish</em>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            &#8377;3,800 &sol; bottle<br>&#8377;790 &sol; glass
+                                        </div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Pouilly-Fuissé &lpar;France&rpar;</strong><br>
+                                            <em>Chardonnay – Creamy texture with hints of pear and
+                                                vanilla</em>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            &#8377;4,600 &sol; bottle<br>&#8377;920 &sol; glass
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-nowrap">Sparkling Wines</h5>
+                                <ul>
+                                    <li class="justify-content-between text-primary row mb-1">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Chandon Imperial
+                                                &lpar;France&rpar;</strong><br>
+                                            <em>Delicate bubbles, green apple and brioche aroma</em>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            &#8377;8,200 &sol; bottle<br>&#8377;1,650 &sol; glass
+                                        </div>
+                                    </li>
+                                    <li class="justify-content-between bg-blackish text-primary row">
+                                        <div class="col-5">
+                                            <strong class="text-nowrap">Zonin Prosecco DOC
+                                                &lpar;Italy&rpar;</strong><br>
+                                            <em>Lively, fruity with a clean, dry finish</em>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            &#8377;3,200 &sol; bottle<br>&#8377;680 &sol; glass
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-primary opacity-100">
+            <p class="pb-4 pt-3">
+                &quot;We invite you to savor every moment &hyphen; where every dish is
+                a memory in the making.&quot;
+            </p>
+        </div>
+        <!-- reserve table section -->
+        <div class="background-two w-100 position-relative about container-fluid text-primary main-section p-2 text-center"
+            id="reserve">
+            <h2 class="mb-4 mt-5">Reservation</h2>
+            <form class="container-md mb-3">
+                <div class="row gx-1 justify-content-center mb-1">
+                    <div class="col-md-4 col-sm-5 col-10 mb-sm-0 mb-1">
+                        <label class="d-none" for="name"></label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Name"
+                            aria-label="Name" required>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-10">
+                        <label class="d-none" for="numb"></label>
+                        <input type="tel" id="numb" name="numb" class="form-control" placeholder="Phone Number"
+                            aria-label="phone number" required>
+                    </div>
+                </div>
+                <div class="row gx-1 justify-content-center mb-1">
+                    <div class="col-md-4 col-sm-5 col-10 mb-sm-0 mb-1">
+                        <label class="d-none" for="email"></label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email"
+                            aria-label="email">
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-10">
+                        <label class="d-none" for="date"></label>
+                        <input type="date" id="date" name="date" class="form-control" aria-label="Date" required>
+                    </div>
+                </div>
+                <div class="row gx-1 justify-content-center mb-1">
+                    <div class="col-md-4 col-sm-5 col-10 mb-sm-0 mb-1">
+                        <label class="d-none" for="time"></label>
+                        <input type="time" id="time" name="time" class="form-control" aria-label="Time" required>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-10">
+                        <label class="d-none" for="seat"></label>
+                        <input type="number" id="seat" name="seat" class="form-control" placeholder="Seats"
+                            aria-label="Seats" required>
+                    </div>
+                </div>
+                <div class="row gx-1 justify-content-center mb-1">
+                    <div class="col-md-8 col-sm-10 col-10">
+                        <label class="d-none" for="message"></label>
+                        <textarea class="form-control" placeholder="Note" id="message" name="message" aria-label="note"
+                            rows="10"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-snow my-3">
+                    Reserve a Table
+                </button>
+            </form>
+        </div>
+    </main>
+    <!-- footer with contacts -->
+    <footer class="container-md mt-3" id="contactus">
+        <div class="row text-primary justify-content-center mb-3 text-center">
+            <div class="col-md-4 col-sm-5 col-6">
+                <h2 class="display-6">Contact Us</h2>
+                <p>
+                    <a href="tel:+919747991662" class="text-decoration-none">9998887766</a>
+                </p>
+                <p>
+                    <a href="mailto:ashikbiu2000@gmail.com" class="text-decoration-none">abc@gmail.com</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-5 col-6">
+                <h2 class="display-6">Address</h2>
+                <address>
+                    34/1000, Old NH 47, Edappally <br>
+                    Junction, Nethaji Nagar, <br>
+                    Edappally, Kerala 682024
+                </address>
+            </div>
+        </div>
+        <div class="contact__media fs-3 mb-4 text-center">
+            <a href="" class="contact__media-icons mx-3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" class="contact__media-icons mx-3"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="" class="contact__media-icons mx-3"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="text-primary mb-2 text-center">
+            &copy; 2025 Ashik Biju &bull; Designed &amp; Built with HTML &amp; CSS
+        </p>
+    </footer>
+    <!-- linking bootstrap -->
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

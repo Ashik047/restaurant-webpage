@@ -1,0 +1,58 @@
+/* modifing existing default values */
+/* colors */
+$primary: whitesmoke;
+$secondary: black;
+$dark: #333;
+$card-bg: rgba(0, 0, 0, 0.5);
+$card-color: whitesmoke;
+$accordion-border-color: whitesmoke;
+$snow: rgb(196, 196, 196);
+/* typography */
+$headings-font-family: "Playfair Display", serif;
+$display-font-family: "Playfair Display", serif;
+/* spacing */
+$spacer: 2rem;
+$accordion-padding-y: 2rem;
+/* breakpoints */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 583px,
+  md: 849px,
+  lg: 992px,
+  xl: 1063px,
+  xxl: 1400px,
+);
+/* heading display */
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 1.7rem,
+);
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/variables-dark";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+/* new colors and new spacer values */
+$cust-colors: (
+  "blackish": #1b1b1b,
+  "gunmetal": #2c2c2c,
+  "snow": $snow,
+);
+$cust-spacers: (
+  6: $spacer * 4,
+  7: $spacer * 7,
+  8: $spacer * 9,
+);
+
+/* merging them to default class */
+$theme-colors: map-merge($cust-colors, $theme-colors);
+$spacers: map-merge($cust-spacers, $spacers);
+
+// @import "../node_modules/bootstrap/scss/buttons";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
